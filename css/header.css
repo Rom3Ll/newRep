@@ -1,0 +1,201 @@
+body {
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .header {
+    border-bottom: 1px solid #d9fff5;
+    min-width: 320px;
+    background-color: #fff;
+  }
+
+  .mobile__nav-list {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mobile__nav-list-item {
+    list-style: none;
+  }
+
+  .mobile__nav-list-item:nth-child(6),
+  .mobile__nav-list-item:nth-child(7),
+  .mobile__nav-list-item:nth-child(8),
+  .mobile__nav-list-item:nth-child(9) {
+    display: none;
+  }
+
+  .mobile__nav-list-item:nth-child(1)::before {
+    content: url(../img/icons/burger.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(2)::before {
+    content: url(../img/icons/Group.svg);
+    margin-left: -15px;
+  }
+
+  .mobile__nav-list-item:nth-child(3)::before {
+    content: url(../img/icons/divider.svg);
+    margin-left: -10px;
+  }
+
+  .mobile__nav-list-item:nth-child(4)::before {
+    content: url(../img/icons/repair.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(5)::before {
+    content: url(../img/icons/checkstatus.svg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119.98px) {
+  .header {
+    min-width: 768px;
+    border-bottom: 1px solid #d9fff5;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .mobile__nav {
+    min-width: 768px;
+  }
+
+  .mobile__nav-list {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7px;
+    margin-top: 5px;
+  }
+
+  .mobile__nav-list-item {
+    list-style: none;
+  }
+
+  .mobile__nav-list-item:nth-child(1),
+  .mobile__nav-list-item:nth-child(2),
+  .mobile__nav-list-item:nth-child(3) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .mobile__nav-list-item:nth-child(3) {
+    flex-grow: 2;
+    /* flex-basis: 200px; */
+  }
+
+  .mobile__nav-list-item:nth-child(4),
+  .mobile__nav-list-item:nth-child(5),
+  .mobile__nav-list-item:nth-child(6),
+  .mobile__nav-list-item:nth-child(7),
+  .mobile__nav-list-item:nth-child(8),
+  .mobile__nav-list-item:nth-child(9) {
+    /* flex-grow: 1;
+     */
+    margin-left: 8px;
+    margin-right: 20px;
+  }
+
+  .mobile__nav-list-item:nth-child(1)::before {
+    content: url(../img/icons/burger.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(2)::before {
+    content: url(../img/icons/divider.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(3)::before {
+    content: url(../img/icons/Group.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(4)::before {
+    content: url(../img/icons/icons__tablet/call.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(5)::before {
+    content: url(../img/icons/icons__tablet/chat.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(6)::before {
+    content: url(../img/icons/icons__tablet/profile.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(7)::before {
+    content: url(../img/icons/divider.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(8)::before {
+    content: url(../img/icons/repair.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(9)::before {
+    content: url(../img/icons/checkstatus.svg);
+  }
+}
+
+@media (min-width: 1120px) {
+  .header {
+    float: right;
+    margin-top: 10px;
+  }
+
+  .mobile__nav-list-item:nth-child(1),
+  .mobile__nav-list-item:nth-child(2),
+  .mobile__nav-list-item:nth-child(3),
+  .mobile__nav-list-item:nth-child(4),
+  .mobile__nav-list-item:nth-child(5),
+  .mobile__nav-list-item:nth-child(6),
+  .mobile__nav-list-item:nth-child(7) {
+    display: none;
+  }
+
+  .mobile__nav-list {
+    font-family: "TTLakes Medium";
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .mobile__nav-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-width: 160px;
+  }
+
+  .mobile__nav-list-item:nth-child(8)::after {
+    content: url(../img/icons/repair.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(8) {
+    margin-right: 25px;
+  }
+
+  .mobile__nav-list-item:nth-child(9)::after {
+    content: url(../img/icons/checkstatus.svg);
+  }
+
+  .mobile__nav-list-item:nth-child(9) {
+    margin-right: 10px;
+  }
+
+  .mobile__nav-list-item:nth-child(8)::before {
+    content: "Оставить заявку";
+  }
+
+  .mobile__nav-list-item:nth-child(9)::before {
+    content: "Статус ремонта";
+  }
+}
