@@ -9,17 +9,51 @@
   </head>
   <body>
     <header class="header">
-      <nav class="mobile__nav">
-        <ul class="mobile__nav-list">
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
-          <li class="mobile__nav-list-item"></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <div class="header__nav-list__wrapper1">
+            <li class="header__nav-list-item__burger">
+              <a href="#"> </a>
+            </li>
+            <li class="header__nav-list-item__logo">
+              <a href="#">
+                <img src="img/icons/Group.svg" alt="site logo icon" />
+              </a>
+            </li>
+            <li class="header__nav-list-item__delimiter">
+              <a href="#"> </a>
+            </li>
+          </div>
+          <div class="header__nav-list__wrapper2">
+            <li class="header__nav-list-item__call">
+              <a href="#"> </a>
+            </li>
+            <li class="header__nav-list-item__chat">
+              <a href="#"> </a>
+            </li>
+            <li class="header__nav-list-item__profile">
+              <a href="#"> </a>
+            </li>
+            <li class="header__nav-list-item__delimiter2">
+              <a href="#"> </a>
+            </li>
+            <li>
+              <label for="repair">
+                <p class="header__nav-list-item_text">Оставить заявку</p>
+              </label>
+            </li>
+            <li id="repair" class="header__nav-list-item__repair">
+              <a href="#"> </a>
+            </li>
+            <li>
+              <label for="status">
+                <p class="header__nav-list-item_text">Проверить статус</p>
+              </label>
+            </li>
+            <li id="status" class="header__nav-list-item__status">
+              <a href="#"> </a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -30,11 +64,21 @@
           <li class="main__nav-list-item main__nav-list-item_active">
             Ремонтируемые бренды
           </li>
-          <li class="main__nav-list-item">Ремонтируемые устройства</li>
-          <li class="main__nav-list-item">Цены на услуги</li>
-          <li class="main__nav-list-item">Адреса сервисных центров</li>
-          <li class="main__nav-list-item">Специальные цены</li>
-          <li class="main__nav-list-item">Отзывы</li>
+          <li class="main__nav-list-item">
+            <a href="#">Ремонтируемые устройства</a>
+          </li>
+          <li class="main__nav-list-item">
+            <a href="#">Цены на услуги</a>
+          </li>
+          <li class="main__nav-list-item">
+            <a href="#">Адреса сервисных центров</a>
+          </li>
+          <li class="main__nav-list-item">
+            <a href="#">Специальные цены</a>
+          </li>
+          <li class="main__nav-list-item">
+            <a href="#">Отзывы</a>
+          </li>
         </ul>
       </nav>
       <section class="main__section">
@@ -43,24 +87,15 @@
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
-          </p>
-
-          <p>
+            <br />
             Мы успешно работаем с 1992 года и заслужили репутацию надежного
             партнера, что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
           </p>
-
           <button class="main__section-btn">Читать далее</button>
         </div>
 
-        <div class="main__section-pic--mobile">
-          <img src="img/main pics/mobile__main.png" alt="company photo" />
-        </div>
-        <div class="main__section-pic--tablet">
-          <img src="img/main pics/mobile__main.png" alt="company photo" />
-        </div>
         <div class="main__section-pic--desctop">
           <img src="img/main pics/desc__main.png" alt="company photo" />
         </div>

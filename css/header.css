@@ -10,44 +10,60 @@ body {
     background-color: #fff;
   }
 
-  .mobile__nav-list {
+  .header__nav-list {
     padding-left: 0px;
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
 
-  .mobile__nav-list-item {
-    list-style: none;
+  .header__nav-list__wrapper1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 15px;
   }
 
-  .mobile__nav-list-item:nth-child(6),
-  .mobile__nav-list-item:nth-child(7),
-  .mobile__nav-list-item:nth-child(8),
-  .mobile__nav-list-item:nth-child(9) {
+  .header__nav-list__wrapper2 {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15px;
+  }
+
+  .header__nav-list-item__burger > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/burger.svg);
+  }
+
+  .header__nav-list-item__delimiter {
+    width: 2px;
+    height: 32px;
+    background-image: url(../img/icons/divider.svg);
+  }
+
+  .header__nav-list-item__repair > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/repair.svg);
+  }
+
+  .header__nav-list-item__status > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/checkstatus.svg);
+  }
+
+  .header__nav-list-item_text,
+  .header__nav-list-item__call,
+  .header__nav-list-item__chat,
+  .header__nav-list-item__profile,
+  .header__nav-list-item__delimiter2 {
     display: none;
-  }
-
-  .mobile__nav-list-item:nth-child(1)::before {
-    content: url(../img/icons/burger.svg);
-  }
-
-  .mobile__nav-list-item:nth-child(2)::before {
-    content: url(../img/icons/Group.svg);
-    margin-left: -15px;
-  }
-
-  .mobile__nav-list-item:nth-child(3)::before {
-    content: url(../img/icons/divider.svg);
-    margin-left: -10px;
-  }
-
-  .mobile__nav-list-item:nth-child(4)::before {
-    content: url(../img/icons/repair.svg);
-  }
-
-  .mobile__nav-list-item:nth-child(5)::before {
-    content: url(../img/icons/checkstatus.svg);
   }
 }
 
@@ -59,101 +75,100 @@ body {
     position: relative;
   }
 
-  .mobile__nav {
+  .header__nav {
     min-width: 768px;
   }
 
-  .mobile__nav-list {
+  .header__nav-list {
     padding-left: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 7px;
-    margin-top: 5px;
-  }
-
-  .mobile__nav-list-item {
+    margin: 5px 5px 7px 5px;
     list-style: none;
   }
 
-  .mobile__nav-list-item:nth-child(1),
-  .mobile__nav-list-item:nth-child(2),
-  .mobile__nav-list-item:nth-child(3) {
-    margin-left: 15px;
-    margin-right: 15px;
+  .header__nav-list__wrapper1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 15px;
   }
 
-  .mobile__nav-list-item:nth-child(3) {
-    flex-grow: 2;
-    /* flex-basis: 200px; */
+  .header__nav-list__wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
   }
 
-  .mobile__nav-list-item:nth-child(4),
-  .mobile__nav-list-item:nth-child(5),
-  .mobile__nav-list-item:nth-child(6),
-  .mobile__nav-list-item:nth-child(7),
-  .mobile__nav-list-item:nth-child(8),
-  .mobile__nav-list-item:nth-child(9) {
-    /* flex-grow: 1;
-     */
-    margin-left: 8px;
-    margin-right: 20px;
+  .header__nav-list-item__burger > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/burger.svg);
   }
 
-  .mobile__nav-list-item:nth-child(1)::before {
-    content: url(../img/icons/burger.svg);
+  .header__nav-list-item__logo {
+    order: 1;
   }
 
-  .mobile__nav-list-item:nth-child(2)::before {
-    content: url(../img/icons/divider.svg);
+  .header__nav-list-item__delimiter {
+    width: 2px;
+    height: 32px;
+    background-image: url(../img/icons/divider.svg);
   }
 
-  .mobile__nav-list-item:nth-child(3)::before {
-    content: url(../img/icons/Group.svg);
+  .header__nav-list-item__delimiter2 {
+    width: 2px;
+    height: 32px;
+    background-image: url(../img/icons/divider.svg);
   }
 
-  .mobile__nav-list-item:nth-child(4)::before {
-    content: url(../img/icons/icons__tablet/call.svg);
+  .header__nav-list-item__repair > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/repair.svg);
   }
 
-  .mobile__nav-list-item:nth-child(5)::before {
-    content: url(../img/icons/icons__tablet/chat.svg);
+  .header__nav-list-item__status > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/checkstatus.svg);
   }
 
-  .mobile__nav-list-item:nth-child(6)::before {
-    content: url(../img/icons/icons__tablet/profile.svg);
+  .header__nav-list-item__call {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/icons__tablet/call.svg);
   }
-
-  .mobile__nav-list-item:nth-child(7)::before {
-    content: url(../img/icons/divider.svg);
+  .header__nav-list-item__chat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/icons__tablet/chat.svg);
   }
-
-  .mobile__nav-list-item:nth-child(8)::before {
-    content: url(../img/icons/repair.svg);
+  .header__nav-list-item__profile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/icons__tablet/profile.svg);
   }
-
-  .mobile__nav-list-item:nth-child(9)::before {
-    content: url(../img/icons/checkstatus.svg);
+  .header__nav-list-item_text {
+    display: none;
   }
 }
 
 @media (min-width: 1120px) {
   .header {
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
-  .mobile__nav-list-item:nth-child(1),
-  .mobile__nav-list-item:nth-child(2),
-  .mobile__nav-list-item:nth-child(3),
-  .mobile__nav-list-item:nth-child(4),
-  .mobile__nav-list-item:nth-child(5),
-  .mobile__nav-list-item:nth-child(6),
-  .mobile__nav-list-item:nth-child(7) {
-    display: none;
-  }
-
-  .mobile__nav-list {
+  .header__nav-list {
     font-family: "TTLakes Medium";
     font-weight: 500;
     line-height: 24px;
@@ -167,7 +182,7 @@ body {
     align-items: center;
   }
 
-  .mobile__nav-list-item {
+  .header__nav-list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,27 +190,32 @@ body {
     min-width: 160px;
   }
 
-  .mobile__nav-list-item:nth-child(8)::after {
-    content: url(../img/icons/repair.svg);
+  .header__nav-list__wrapper1,
+  .header__nav-list-item__call,
+  .header__nav-list-item__chat,
+  .header__nav-list-item__profile {
+    display: none;
   }
 
-  .mobile__nav-list-item:nth-child(8) {
-    margin-right: 25px;
+  .header__nav-list__wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+    text-align: center;
   }
 
-  .mobile__nav-list-item:nth-child(9)::after {
-    content: url(../img/icons/checkstatus.svg);
+  .header__nav-list-item__repair > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/repair.svg);
   }
 
-  .mobile__nav-list-item:nth-child(9) {
-    margin-right: 10px;
-  }
-
-  .mobile__nav-list-item:nth-child(8)::before {
-    content: "Оставить заявку";
-  }
-
-  .mobile__nav-list-item:nth-child(9)::before {
-    content: "Статус ремонта";
+  .header__nav-list-item__status > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/checkstatus.svg);
   }
 }
